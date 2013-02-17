@@ -1,0 +1,8 @@
+._s0,
+#facebook .scaledImageFitWidth,
+#facebook .uiMediaThumbImg,
+img[src*="profile.ak.fbcdn.net"],
+img[src*="profile-a.xx.fbcdn.net"],
+img[src*="profile-b.xx.fbcdn.net"] {
+  -webkit-filter: invert(100%);
+}

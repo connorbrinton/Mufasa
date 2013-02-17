@@ -1,0 +1,6 @@
+.yt-thumb-clip img {
+  -webkit-filter: invert(100%);
+}
+#yt-masthead-user .yt-thumb-clip img {
+  -webkit-filter: none;
+}
