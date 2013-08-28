@@ -2,7 +2,7 @@
   "name": "Mufasa",
   "version": "1.0",
   "manifest_version": 2,
-  "description": "A Chrome extension that redirects you away from distracting pages, while still allowing you to use the productive features of the website.",
+  "description": "A Chrome extension that redirects you away from distracting pages, while still allowing you to use the productive features.",
   "background": {
     "scripts": ["background.js"]
   },
