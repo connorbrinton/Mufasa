@@ -1,0 +1,3 @@
+img[id^="vidthumb"] {
+  -webkit-filter: invert(100%);
+}

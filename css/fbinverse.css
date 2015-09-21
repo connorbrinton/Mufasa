@@ -1,8 +1,17 @@
 ._s0,
 #facebook .scaledImageFitWidth,
 #facebook .uiMediaThumbImg,
+#facebook .profileChangeImage,
+#facebook .coverPhotoImg,
+a.coverPhotoChangeUnit img,
+a.thumbnail img,
+i.photo,
 img[src*="profile.ak.fbcdn.net"],
-img[src*="profile-a.xx.fbcdn.net"],
-img[src*="profile-b.xx.fbcdn.net"] {
+img[src*="profile-a"],
+img[src*="profile-b"],
+img[src*="photos"]:not(.spotlight),
+.img,
+.photoWrap img,
+.uiScaledImageContainer img {
   -webkit-filter: invert(100%);
 }

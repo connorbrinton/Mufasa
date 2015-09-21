@@ -1,0 +1,5 @@
+a[href^="/store/music/album"] img,
+a[href^="/store/music/artist"] img,
+div.doc-banner-icon img {
+  -webkit-filter: invert(100%);
+}
