@@ -10,6 +10,7 @@ img[src*="profile.ak.fbcdn.net"],
 img[src*="profile-a"],
 img[src*="profile-b"],
 img[src*="photos"]:not(.spotlight),
+img[src*="hprofile"],
 .img,
 .photoWrap img,
 .uiScaledImageContainer img {
