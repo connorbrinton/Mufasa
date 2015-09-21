@@ -2,16 +2,35 @@
   "name": "Mufasa",
   "version": "1.0",
   "manifest_version": 2,
-  "description": "A Chrome extension that redirects you away from distracting pages, while still allowing you to use the productive features.",
+  "description": "A Chrome extension that redirects you away from distracting pages, while still allowing you to use the productive features of the website.",
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["js/background.js"]
   },
   "content_scripts": [
     {
       "matches": ["http://www.facebook.com/*", "http://facebook.com/*", "https://www.facebook.com/*", "https://facebook.com/*"],
-      "js": ["noticker.js"]
+      "css": ["css/fb-no-ticker.css"]
+    },
+    {
+      "matches": ["<all_urls>"],
+      "css": ["css/fbinverse.css"],
+      "all_frames": true
+    },
+    {
+      "matches": ["http://www.youtube.com/*", "http://youtube.com/*", "https://www.youtube.com/*", "https://youtube.com/*"],
+      "css": ["css/ytinverse.css"],
+      "js": ["js/ytnorel_inject.js"]
+    },
+    {
+      "matches": ["*://www.google.com/*"],
+      "css": ["css/google-inverse.css"]
+    },
+    {
+      "matches": ["*://play.google.com/*"],
+      "css": ["css/play-inverse.css"]
     }
   ],
+  "web_accessible_resources": ["js/ytnorel.js"],
   "permissions": [
     "tabs"
   ]

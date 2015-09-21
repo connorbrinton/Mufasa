@@ -19,5 +19,5 @@ If anyone is interested in developing any of these features for Mufasa, please l
 # Developed By
 * Connor Brinton - <connor.brinton@gmail.com>
 
-# LICENSE
+# License
 This project is licensed under the Apache License, Version 2.0. For more information, see the `LICENSE` file.
