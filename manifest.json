@@ -28,6 +28,10 @@
     {
       "matches": ["*://play.google.com/*"],
       "css": ["css/play-inverse.css"]
+    },
+    {
+      "matches": ["*://www.amazon.com/*"],
+      "css": ["css/amazon-inverse.css"]
     }
   ],
   "web_accessible_resources": ["js/ytnorel.js"],

@@ -1,6 +1,11 @@
-.yt-thumb-clip img {
+.yt-thumb-simple img,
+.yt-thumb-clip img,
+.yt-uix-simple-thumb-wrap img,
+.yt-uix-simple-thumb-related img,
+.ytp-endscreen-content .videowall-still-image {
   -webkit-filter: invert(100%);
 }
+
 #yt-masthead-user .yt-thumb-clip img {
   -webkit-filter: none;
 }

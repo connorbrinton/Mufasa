@@ -1,0 +1,3 @@
+.a-link-normal[href*="ebook/dp/"] img {
+  -webkit-filter: invert(100%) !important;
+}
