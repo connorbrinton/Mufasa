@@ -8,7 +8,7 @@ var amazonMp3s = /\.amazon\..*\/.*node=163856011/;
 var amazonTarget = "http://www.amazon.com/b/?node=2258933011";
 // Redirection by time
 var bedtimeHour = 22;
-var bedtimeMinute = 0;
+var bedtimeMinute = 30;
 var bedtimeTarget = "https://www.lds.org/ensign/2015/07/young-adults/filled-with-life-and-energy";
 
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
