@@ -16,3 +16,8 @@ img[src*="hprofile"],
 .uiScaledImageContainer img {
   -webkit-filter: invert(100%);
 }
+
+/* Negate it for nested images, so there's no double effect */
+.img .img {
+  -webkit-filter: none;
+}
