@@ -32,6 +32,10 @@
     {
       "matches": ["*://www.amazon.com/*"],
       "css": ["css/amazon-inverse.css"]
+    },
+    {
+      "matches": ["*://open.spotify.com/*"],
+      "css": ["css/spotify-no-cover.css"]
     }
   ],
   "web_accessible_resources": ["js/ytnorel.js"],

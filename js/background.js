@@ -3,12 +3,15 @@
 var facebooks = /.*facebook\.com\/(home.php)?$/;
 var facebookTarget = "https://www.facebook.com/" + "connor.brinton";
 var youtubes = /.*youtube\.com\/$/;
-var youtubeTarget = "https://www.youtube.com/user/MormonMessagesYouth/videos";
+var youtubeTarget = "https://www.youtube.com/user/MormonMessages/videos";
 var amazonMp3s = /\.amazon\..*\/.*node=163856011/;
 var amazonTarget = "http://www.amazon.com/b/?node=2258933011";
+var pinterests = /.*pinterest\.com\/((discover|categories)\/?)?$/;
+var pinterestTarget = "https://www.pinterest.com/" + "connorbrinton";
+
 // Redirection by time
-var bedtimeHour = 22;
-var bedtimeMinute = 30;
+var bedtimeHour = 24;
+var bedtimeMinute = 00;
 var bedtimeTarget = "https://www.lds.org/ensign/2015/07/young-adults/filled-with-life-and-energy";
 
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
@@ -38,14 +41,17 @@ function redirectByTime(tabId, url) {
 }
 
 function redirectBySite(tabId, url) {
-  if(facebooks.test(url)) {
+  if (facebooks.test(url)) {
     chrome.tabs.update(tabId, { url: facebookTarget });
     return true;
-  } else if(youtubes.test(url)) {
+  } else if (youtubes.test(url)) {
     chrome.tabs.update(tabId, { url: youtubeTarget });
     return true;
-  } else if(amazonMp3s.test(url)) {
+  } else if (amazonMp3s.test(url)) {
     chrome.tabs.update(tabId, { url: amazonTarget });
+    return true;
+  } else if (pinterests.test(url)) {
+    chrome.tabs.update(tabId, { url: pinterestTarget });
     return true;
   }
   // We didn't handle the redirect

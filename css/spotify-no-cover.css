@@ -1,0 +1,5 @@
+.cover-art-image,
+.content.album .actionable.cover-art,
+.artist-header {
+  visibility: hidden !important;
+}
